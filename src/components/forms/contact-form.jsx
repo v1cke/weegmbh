@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { useFormik } from "formik";
 // internal
 import { contact_schema } from "@utils/validation-schema";
@@ -6,26 +7,51 @@ import ErrorMsg from "./error-msg";
 import NiceSelect from "@ui/niceSelect";
 
 const ContactForm = () => {
+  const form =useRef();
+  const sendEmail = (e) =>{
+    e.preventDefault();
+    emailjs.sendForm('service_09qnshq', 'template_irfvadi', form.current, 'rRQgLnmvk_K0SZSsf')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent");
+          // resetForm();
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
+  const selectHandler = (value) => {};
+  const handleSelectChange = (value) => {
+    if (value === "Select Subject") {
+      setFieldValue('selectedValue', '');
+    } else {
+      setFieldValue('selectedValue', value);
+      selectHandler(value);
+    }
+  };
   // use formik
-  const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
+  const { handleChange, handleSubmit, handleBlur, errors, values, touched, setFieldValue } =
     useFormik({
       initialValues: {
         name: "",
         email: "",
         phone: "",
-        company: "",
         msg: "",
+        selectedValue: ""
       },
+
       validationSchema: contact_schema,
+      
       onSubmit: (values, { resetForm }) => {
         console.log(values);
         resetForm();
       },
     });
+    console.log('Form values:', values);
 
-  const selectHandler = e => { }
+  // const selectHandler = e => { }
   return (
-    <form id="contact-form" onSubmit={handleSubmit}>
+    <form ref={form} id="contact-form" onSubmit={sendEmail}>
       <div className="row">
         <div className="col-xxl-6 col-xl-6 col-lg-6">
           <div className="single-input-field">
@@ -76,15 +102,19 @@ const ContactForm = () => {
           <div className="single-input-field select">
             <NiceSelect
               options={[
-                { value: "Thema wählen", text: "Thema wählen" },
+                { value: "Select Subject", text: "Thema wählen" },
                 { value: "Subject One", text: "Zug / Zugführer mieten" },
                 { value: "Subject Two", text: "Weiterbildung / Prüfung" },
                 { value: "Subject Three", text: "Allgemeines" },
               ]}
               defaultCurrent={0}
-              onChange={selectHandler}
+              defaultValue={values.selectedValue}
+              onChange={handleSelectChange}
               name="Select Subject"
             />
+            {touched.selectedValue && values.selectedValue === "" && (
+              <ErrorMsg error={errors.selectSubject} />
+            )}
           </div>
         </div>
         <div className="col-xxl-12 col-xl-12 col-lg-12">

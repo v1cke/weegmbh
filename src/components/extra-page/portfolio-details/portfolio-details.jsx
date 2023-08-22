@@ -39,7 +39,7 @@ const PortfolioDetails = ({ item }) => {
                             </div>
                             <div className="service-details-content">
                                 <ServiceContent item={item} />
-                                <div className="row portfolio__sd-box">
+                                {/* <div className="row portfolio__sd-box">
                                     {
                                         portfolioContent.map((item) => (
                                             <div className="col-lg-4 col-sm-6" key={item.id}>
@@ -51,32 +51,17 @@ const PortfolioDetails = ({ item }) => {
                                             </div>
                                         ))
                                     }
-                                </div>
-                                <p className="mb-30">Although both transportation and logistics deal with getting valuables from one
-                                    location
-                                    to
-                                    another,
-                                    logistics has added benefits and functions. Logistics executives also have to make
-                                    decisions
-                                    dealing
-                                    with packaging, containerization, documentation, insurance, storage, importing and
-                                    exporting
-                                    regulations, freight damage claims, working and collaborating, managing vendors and
-                                    partners, and
-                                    risk mitigation. Even though these terms have been used as a substation for each other,
-                                    the
-                                    key
-                                    differentiators are that logistics deals with the integration of storage.
-                                </p>
+                                </div> */}
+                                {/* <p className="mb-30">{item?.description_1}</p> */}
                                 <div className="portfolio-slider mb-45">
                                     <PortFolioBox />
                                 </div>
-                                <div className="portfolio-form">
+                                {/* <div className="portfolio-form">
                                     <div className="section__title mb-30">
                                         <h3 className="title-sm">Make Custom Request</h3>
                                     </div>
                                     <Form />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

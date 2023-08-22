@@ -9,8 +9,8 @@ const index = () => {
     return (
         <>
             <Wrapper>
-                <SEO pageTitle={'Weser Ems Eisenbahngesellschaft'} />
-                <HeaderOne headerClass={'header__two menu-sticky white-bg'} />
+                <SEO pageTitle={'WEE Stellenangebote'} />
+                <HeaderOne headerClass={'header__two menu-sticky header__transparent'} />
                 <CarrerArea />
                 <FooterFour />
             </Wrapper>

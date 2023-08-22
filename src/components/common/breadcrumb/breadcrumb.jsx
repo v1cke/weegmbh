@@ -1,5 +1,5 @@
 import React from 'react';
-import breadcrumb_bg from '@assets/img/slider/banner-bg.jpg';
+import breadcrumb_bg from '@assets/img/slider/banner-bg4.jpg';
 import Link from 'next/link';
 
 const Breadcrumb = ({ title, subTitle }) => {

@@ -5,7 +5,7 @@ import Breadcrumb from '@components/common/breadcrumb/breadcrumb';
 const index = () => {
     return (
         <main>
-            <Breadcrumb title={'Portfolio'} subTitle={'Portfolio'} />
+            <Breadcrumb title={'Fahrzeuge'} subTitle={'Fahrzeuge'} />
             <PortfolioSection />
         </main>
     );

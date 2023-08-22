@@ -6,7 +6,7 @@ import PortfolioDetails from './portfolio-details';
 const index = ({ item }) => {
     return (
         <main>
-            <Breadcrumb title={'Portfolio Details'} subTitle={'Portfolio Details'} />
+            <Breadcrumb title={'Fahrzeugbeschreibung'} subTitle={'Fahrzeugbeschreibung'} />
             <PortfolioDetails item={item} />
         </main>
     );

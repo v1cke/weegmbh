@@ -12,11 +12,11 @@ const PortfolioSection = () => {
                         <div className="portfolio-menu filter-button-group mb-55">
                             <nav>
                                 <div className="nav justify-content-center" id="nav-tab" role="tablist">
-                                    <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">View All</button>
-                                    <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-forwarding" aria-selected="false">Freight Forwarding</button>
-                                    <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Transport Management</button>
-                                    <button className="nav-link" id="nav-wordpress-tab" data-bs-toggle="tab" data-bs-target="#nav-wordpress" type="button" role="tab" aria-controls="nav-wordpress" aria-selected="false">Materials</button>
-                                    <button className="nav-link" id="nav-webdesign-tab" data-bs-toggle="tab" data-bs-target="#nav-webdesign" type="button" role="tab" aria-controls="nav-webdesign" aria-selected="false">Warehouse</button>
+                                    <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Alle Fahrzeuge</button>
+                                    <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-forwarding" aria-selected="false">Lokomotiven</button>
+                                    <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Trieb-/Steuerwagen</button>
+                                    <button className="nav-link" id="nav-wordpress-tab" data-bs-toggle="tab" data-bs-target="#nav-wordpress" type="button" role="tab" aria-controls="nav-wordpress" aria-selected="false">Wagons</button>
+                                    {/* <button className="nav-link" id="nav-webdesign-tab" data-bs-toggle="tab" data-bs-target="#nav-webdesign" type="button" role="tab" aria-controls="nav-webdesign" aria-selected="false">Warehouse</button> */}
                                 </div>
                             </nav>
                         </div>
@@ -27,24 +27,24 @@ const PortfolioSection = () => {
                     <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabIndex="0">
                         <div className="row grid mb-30">
                             {
-                                PortfolioData.slice(6, 15).map((item) => (
+                                PortfolioData.slice(0, 9).map((item) => (
                                     <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
                                         <div className="portfolio__item mb-30">
                                             <div className="portfolio__img">
-                                                <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="portfolio" />
+                                                <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="Fahrzeuge" />
                                                 <div className="portfolio__content">
-                                                    <div className="portfolio__content-thumb">
-                                                        <Image src={item.icon} style={{ width: "100%", height: "auto" }} alt="portfolio Image" />
-                                                    </div>
+                                                    {/* <div className="portfolio__content-thumb">
+                                                        <Image src={item.icon} style={{ width: "100%", height: "auto" }} alt="Fahrzeuge" />
+                                                    </div> */}
                                                     <div className="portfolio__content-title">
                                                         <h5><Link href={`/portfolio-details/${item.id}`}>{item.subTitle}</Link></h5>
                                                         <h2><Link href={`/portfolio-details/${item.id}`}>{item.title}</Link></h2>
                                                     </div>
-                                                    <p>{item.description}</p>
+                                                    {/* <p>{item.description}</p>
                                                     <div className="portfolio__content-data">
                                                         <span><i className={item.userIcon}></i> <Link href="/team">{item.authorName}</Link></span>
                                                         <span><i className={item.dateIcon}></i> <Link href="#">{item.date}</Link></span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -56,24 +56,24 @@ const PortfolioSection = () => {
                     <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabIndex="0">
                         <div className="row grid mb-30">
                             {
-                                PortfolioData.slice(8, 15).map((item) => (
-                                    item.forwarding && <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
+                                PortfolioData.slice(0, 9).map((item) => (
+                                    item.lok && <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
                                         <div className="portfolio__item mb-30">
                                             <div className="portfolio__img">
-                                                <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="portfolio" />
+                                                <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="Fahrzeuge" />
                                                 <div className="portfolio__content">
-                                                    <div className="portfolio__content-thumb">
-                                                        <Image src={item.icon} style={{ width: "100%", height: "auto" }} alt="portfolio Image" />
-                                                    </div>
+                                                    {/* <div className="portfolio__content-thumb">
+                                                        <Image src={item.icon} style={{ width: "100%", height: "auto" }} alt="Fahrzeuge" />
+                                                    </div> */}
                                                     <div className="portfolio__content-title">
                                                         <h5><Link href={`/portfolio-details/${item.id}`}>{item.subTitle}</Link></h5>
                                                         <h2><Link href={`/portfolio-details/${item.id}`}>{item.title}</Link></h2>
                                                     </div>
-                                                    <p>{item.description}</p>
+                                                    {/* <p>{item.description}</p>
                                                     <div className="portfolio__content-data">
                                                         <span><i className={item.userIcon}></i> <Link href="/team">{item.authorName}</Link></span>
                                                         <span><i className={item.dateIcon}></i> <Link href="#">{item.date}</Link></span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -85,24 +85,24 @@ const PortfolioSection = () => {
                     <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabIndex="0">
                         <div className="row grid mb-30">
                             {
-                                PortfolioData.slice(10, 15).map((item) => (
-                                    item.management && <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
+                                PortfolioData.slice(0, 9).map((item) => (
+                                    item.triebsteuer && <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
                                         <div className="portfolio__item mb-30">
                                             <div className="portfolio__img">
                                                 <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="portfolio" />
                                                 <div className="portfolio__content">
-                                                    <div className="portfolio__content-thumb">
+                                                    {/* <div className="portfolio__content-thumb">
                                                         <Image src={item.icon} style={{ width: "100%", height: "auto" }} alt="portfolio Image" />
-                                                    </div>
+                                                    </div> */}
                                                     <div className="portfolio__content-title">
                                                         <h5><Link href={`/portfolio-details/${item.id}`}>{item.subTitle}</Link></h5>
                                                         <h2><Link href={`/portfolio-details/${item.id}`}>{item.title}</Link></h2>
                                                     </div>
-                                                    <p>{item.description}</p>
+                                                    {/* <p>{item.description}</p>
                                                     <div className="portfolio__content-data">
                                                         <span><i className={item.userIcon}></i> <Link href="/team">{item.authorName}</Link></span>
                                                         <span><i className={item.dateIcon}></i> <Link href="#">{item.date}</Link></span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -114,24 +114,24 @@ const PortfolioSection = () => {
                     <div className="tab-pane fade" id="nav-wordpress" role="tabpanel" aria-labelledby="nav-wordpress-tab" tabIndex="0">
                         <div className="row grid mb-30">
                             {
-                                PortfolioData.slice(11, 15).map((item) => (
-                                    item.materials && <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
+                                PortfolioData.slice(0, 9).map((item) => (
+                                    item.wagon && <div className="col-xl-4 col-lg-6 col-md-6" key={item.id}>
                                         <div className="portfolio__item mb-30">
                                             <div className="portfolio__img">
                                                 <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="portfolio" />
                                                 <div className="portfolio__content">
-                                                    <div className="portfolio__content-thumb">
+                                                    {/* <div className="portfolio__content-thumb">
                                                         <Image src={item.icon} style={{ width: "100%", height: "auto" }} alt="portfolio Image" />
-                                                    </div>
+                                                    </div> */}
                                                     <div className="portfolio__content-title">
                                                         <h5><Link href={`/portfolio-details/${item.id}`}>{item.subTitle}</Link></h5>
                                                         <h2><Link href={`/portfolio-details/${item.id}`}>{item.title}</Link></h2>
                                                     </div>
-                                                    <p>{item.description}</p>
+                                                    {/* <p>{item.description}</p>
                                                     <div className="portfolio__content-data">
                                                         <span><i className={item.userIcon}></i> <Link href="/team">{item.authorName}</Link></span>
                                                         <span><i className={item.dateIcon}></i> <Link href="#">{item.date}</Link></span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@ const PortfolioSection = () => {
                             }
                         </div>
                     </div>
-                    <div className="tab-pane fade" id="nav-webdesign" role="tabpanel" aria-labelledby="nav-webdesign-tab" tabIndex="0">
+                    {/* <div className="tab-pane fade" id="nav-webdesign" role="tabpanel" aria-labelledby="nav-webdesign-tab" tabIndex="0">
                         <div className="row grid mb-30">
                             {
                                 PortfolioData.slice(9, 14).map((item) => (
@@ -168,7 +168,7 @@ const PortfolioSection = () => {
                                 ))
                             }
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

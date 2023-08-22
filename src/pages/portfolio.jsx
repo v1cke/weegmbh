@@ -9,8 +9,8 @@ const index = () => {
     return (
         <>
             <Wrapper>
-                <SEO pageTitle={'Delport'} />
-                <HeaderOne headerClass={'header__two menu-sticky white-bg'} />
+                <SEO pageTitle={'WEE Züge / Fuhrpark'} />
+                <HeaderOne headerClass={'header__two menu-sticky header__transparent'} />
                 <PortfolioMainArea />
                 <FooterFour />
             </Wrapper>

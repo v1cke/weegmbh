@@ -8,8 +8,8 @@ import React from 'react';
 const index = () => {
     return (
         <Wrapper>
-            <SEO pageTitle={'Weser Ems Eisenbahngesellschaft'} />
-            <HeaderOne headerClass={'header__two menu-sticky white-bg'} />
+            <SEO pageTitle={'WEE Leistungsumfang'} />
+            <HeaderOne headerClass={'header__two header__transparent menu-sticky'} />
             <ServicesMainArea />
             <FooterFour />
         </Wrapper>

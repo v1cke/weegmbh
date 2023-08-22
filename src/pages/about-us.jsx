@@ -11,7 +11,7 @@ const index = () => {
         <>
             <Wrapper>
                 <SEO pageTitle={'Weser Ems Eisenbahngesellschaft'} />
-                <HeaderOne headerClass={'header__two menu-sticky white-bg'} />
+                <HeaderOne headerClass={'header__two menu-sticky header__transparent'} />
                 <AboutUsArea />
                 <FooterFour />
             </Wrapper>

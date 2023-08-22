@@ -1,5 +1,5 @@
 import React from 'react';
-import banner_overlay from '@assets/img/slider/banner-bg.jpg'
+import banner_overlay from '@assets/img/slider/banner-bg4.jpg'
 
 const BannerArea = () => {
    return (
