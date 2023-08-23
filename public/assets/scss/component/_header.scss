@@ -112,7 +112,7 @@
 		span {
 			width: 30px;
 			height: 3px;
-			background: var(--clr-common-heading);
+			background: var(--clr-common-white);
 			display: block;
 			margin: 5px 0;
 
@@ -682,6 +682,18 @@
 	position: fixed;
 	top: 0;
 	background: var(--clr-common-white);
+	ul {
+		li {
+			a {
+				color: var(--clr-common-heading);
+				padding: 32px 0;
+			}
+
+			&:hover a {
+				color: var(--clr-common-color-red);
+			}
+		}
+	}
 	z-index: 800;
 	right: 0;
 	left: 0;
@@ -692,6 +704,9 @@
 	border: none;
 	opacity: 1;
 	visibility: visible;
+	span {
+		background: var(--clr-common-heading);
+	}
 }
 
 .header__two.menu-sticky.sticky {

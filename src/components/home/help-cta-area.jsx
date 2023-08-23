@@ -1,5 +1,5 @@
 import React from 'react';
-import bg_overlay from '@assets/img/cta/help-cta-bg.png'
+import bg_overlay from '@assets/img/cta/contact2.jpg'
 import Link from 'next/link';
 
 const HelpCtaArea = () => {

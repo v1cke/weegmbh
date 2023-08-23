@@ -4,11 +4,12 @@ const menu_data = [
     hasDropdown: false,
     title: "Start",
     link: "/",
-    submenus: [
-      { title: "Home Style 01", link: "/" },
-      { title: "Home Style 02", link: "/home-2" },
-      { title: "Home Style 03", link: "/home-3" },
-    ],
+    pages: true,
+    // submenus: [
+    //   { title: "Home Style 01", link: "/" },
+    //   { title: "Home Style 02", link: "/home-2" },
+    //   { title: "Home Style 03", link: "/home-3" },
+    // ],
   },
   // {
   //   id: 2,
@@ -28,6 +29,7 @@ const menu_data = [
     hasDropdown: false,
     title: "Leistungen",
     link: "/services",
+    pages: true,
     submenus: [
       { title: "Leistungen", link: "/services" },
       { title: "Leistungsdetails", link: "/services-details" },
@@ -38,6 +40,7 @@ const menu_data = [
     hasDropdown: false,
     title: "Fahrzeuge",
     link: "/portfolio",
+    pages: true,
     // submenus: [
         //   { title: "Portfolio", link: "/portfolio" },
         //   { title: "Portfolio Details", link: "/portfolio-details" },
@@ -48,6 +51,7 @@ const menu_data = [
     hasDropdown: false,
     title: "Karriere",
     link: "/career",
+    pages: true,
   },
   {
     id: 6,

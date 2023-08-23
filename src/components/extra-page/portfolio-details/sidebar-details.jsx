@@ -14,7 +14,7 @@ const SidebarDetails = () => {
             <SearchInput />
             <WidgetServices />
             {/* <Docs /> */}
-            <Contact />
+            {/* <Contact /> */}
         </div>
     );
 };

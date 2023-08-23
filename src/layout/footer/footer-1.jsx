@@ -10,7 +10,7 @@ const FooterOne = () => {
             id: 1,
             title: 'Telefon',
             img: bg_1,
-            contact: 'tel:+49 541 4444040',
+            contact: 'tel:+495414444040',
             call_num: '+49 541 4444040',
             icon: 'flaticon-telephone-call',
         },
@@ -18,7 +18,7 @@ const FooterOne = () => {
             id: 2,
             title: 'E-mail',
             img: bg_2,
-            contact: 'info@wee.gmbh',
+            contact: 'mailto:info@wee.gmbh',
             call_num: 'info@wee.gmbh',
             icon: 'flaticon-envelope',
         },
@@ -55,7 +55,7 @@ const FooterOne = () => {
 
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget1 mb-50 pr-20">
                                 <div className="footer-widget-title">
                                     <h4>Über uns</h4>
@@ -71,7 +71,7 @@ const FooterOne = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget2 mb-50 pl-30">
                                 <div className="footer-widget-title">
                                     <h4>Unternehmen</h4>
@@ -93,7 +93,7 @@ const FooterOne = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget3 mb-50 pl-55">
                                 <div className="footer-widget-title">
                                     <h4>Leistungen</h4>
@@ -107,7 +107,7 @@ const FooterOne = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget4 mb-50 pl-10 pr-40">
                                 <div className="footer-widget-title">
                                     <h4>Subscribe us</h4>
@@ -121,7 +121,7 @@ const FooterOne = () => {
                                     <button type="submit">Subscribe Now</button>
                                 </form>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

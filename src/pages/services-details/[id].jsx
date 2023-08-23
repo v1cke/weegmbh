@@ -26,8 +26,8 @@ const ServicesDetails = () => {
   return (
     <>
       <Wrapper>
-        <SEO pageTitle={'Delport'} />
-        <HeaderOne headerClass="header__two menu-sticky white-bg" />
+        <SEO pageTitle={'WEE Leistungen'} />
+        <HeaderOne headerClass="header__two menu-sticky header__transparent" />
         <DetailServices item={service} />
         <FooterFour />
       </Wrapper>

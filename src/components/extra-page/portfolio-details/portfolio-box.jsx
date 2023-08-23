@@ -1,8 +1,11 @@
 import React from 'react';
-import img_1 from '@assets/img/portfolio/pr-img1.jpg';
-import img_2 from '@assets/img/portfolio/pr-img2.jpg';
-import img_3 from '@assets/img/portfolio/pr-img3.jpg';
-import img_4 from '@assets/img/portfolio/pr-img4.jpg';
+import img_1 from '@assets/img/gallery/143.jpg';
+import img_2 from '@assets/img/gallery/216.jpg';
+import img_3 from '@assets/img/gallery/626.jpg';
+import img_4 from '@assets/img/gallery/rangierlokv65.jpg';
+import img_5 from '@assets/img/gallery/steuerwagen_bnrbdzf.png';
+import img_6 from '@assets/img/gallery/flachwagen.jpg';
+import img_7 from '@assets/img/gallery/mittelwagen.jpg';
 
 //swiper
 import 'swiper/css';
@@ -29,6 +32,18 @@ const PortFolioBox = () => {
         {
             id: 4,
             image: img_4,
+        },
+        {
+            id: 5,
+            image: img_5,
+        },
+        {
+            id: 6,
+            image: img_6,
+        },
+        {
+            id: 7,
+            image: img_7,
         },
     ]
     return (

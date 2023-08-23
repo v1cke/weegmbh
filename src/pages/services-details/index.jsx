@@ -13,7 +13,7 @@ const index = () => {
         <>
             <Wrapper>
                 <SEO pageTitle={'Weser Ems Eisenbahn'} />
-                <HeaderOne headerClass="header__two menu-sticky white-bg" />
+                <HeaderOne headerClass="header__two menu-sticky header__transparent" />
                 <DetailServices item={item} />
                 <FooterFour />
             </Wrapper>

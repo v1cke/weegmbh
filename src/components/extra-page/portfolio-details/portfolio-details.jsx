@@ -5,6 +5,7 @@ import PortFolioBox from './portfolio-box';
 import Form from './form';
 import ServiceContent from './service-content';
 import Image from 'next/image';
+import HelpCtaArea from "./help-cta-area";
 
 const PortfolioDetails = ({ item }) => {
     const portfolioContent = [
@@ -53,6 +54,7 @@ const PortfolioDetails = ({ item }) => {
                                     }
                                 </div> */}
                                 {/* <p className="mb-30">{item?.description_1}</p> */}
+                                <HelpCtaArea />
                                 <div className="portfolio-slider mb-45">
                                     <PortFolioBox />
                                 </div>

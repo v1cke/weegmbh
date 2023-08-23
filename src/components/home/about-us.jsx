@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import about_img from "@assets/img/about/about-us-2.png";
+import about_img from "@assets/img/about/ph.png";
 import Image from "next/image";
 import "react-modal-video/css/modal-video.min.css";
 import VideoModal from "@components/common/modals/modal-video";
@@ -24,7 +24,7 @@ const AboutUs = () => {
                 data-wow-delay=".5s"
               >
                 <div className="section__title mb-50">
-                  <span className="sub-title">Über uns</span>
+                  <span className="sub-title">Wer wir sind</span>
                   <h2 className="title">
                     Die Full-Service <br /> Eisenbahner
                   </h2>
@@ -168,7 +168,7 @@ const AboutUs = () => {
       <VideoModal
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"https://www.youtube.com/watch?v=WKf3OEORLSM&t=4s"}
+        videoId="WKf3OEORLSM"
       />
     </>
   );

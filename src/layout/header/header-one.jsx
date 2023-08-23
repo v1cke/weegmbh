@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "@assets/img/logo/logo-w200.png";
+import logo from "@assets/img/logo/logo_dark50.png";
 import { useEffect } from "react";
 import OffCanvasMain from "@components/common/off-canvas";
 import { useState } from "react";

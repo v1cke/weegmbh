@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenus from "./mobile-menus";
-import logo from '@assets/img/logo/logo.png';
+import logo from '@assets/img/logo/logo_dark50.png';
 
 const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
 
@@ -27,14 +27,14 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 <Image src={logo} style={{ width: "auto", height: "auto" }} alt="Logo" />
               </Link>
             </div>
-            <div className="sidebar__search mb-25">
+            {/* <div className="sidebar__search mb-25">
               <form onSubmit={handleSubmit}>
                 <div className="single-input-field">
                   <input name="name" type="text" placeholder="Search Here" />
                   <i className="fas fa-search"></i>
                 </div>
               </form>
-            </div>
+            </div> */}
 
             <div className="mobile-menu fix mb-10 mean-container">
               <div className="mean-bar">
@@ -49,9 +49,9 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                     <i className="flaticon-telephone-call"></i>
                   </div>
                   <div className="sidebar__info-text">
-                    <span>Call us now</span>
+                    <span>Telefon</span>
                     <h5>
-                      <a href="tel:32622266600">326 222 666 00</a>
+                      <a href="tel:+495414444040">+49 541 4444040</a>
                     </h5>
                   </div>
                 </div>
@@ -60,9 +60,9 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                     <i className="flaticon-envelope"></i>
                   </div>
                   <div className="sidebar__info-text">
-                    <span>Email now</span>
+                    <span>Email</span>
                     <h5>
-                      <a href="mailto:info@webdow.com">info@webdow.com</a>
+                      <a href="mailto:info@wee.gmbh">info@wee.gmbh</a>
                     </h5>
                   </div>
                 </div>
@@ -71,8 +71,8 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                     <i className="flaticon-pin"></i>
                   </div>
                   <div className="sidebar__info-text">
-                    <span>12/A, New Boston Hall</span>
-                    <h5>New york, united states</h5>
+                    <span>Franz-Lenz-Str. 1, 49084 Osnabrück</span>
+                    <h5>Niedersachsen, Deutschland</h5>
                   </div>
                 </div>
               </div>
@@ -80,22 +80,17 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="sidebar__social">
             <ul>
                 <li>
-                  <Link href="https://www.facebook.com/">
+                  <Link href="https://www.facebook.com/weseremseisenbahn/">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://twitter.com/">
-                    <i className="fab fa-twitter"></i>
+                  <Link href="https://www.instagram.com/weseremseisenbahn/">
+                    <i className="fab fa-instagram"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.behance.net/">
-                    <i className="fab fa-behance"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.youtube.com/">
+                  <Link href="https://www.youtube.com/channel/UCLKl7-9ga4vOF4KpEmSBw1w">
                     <i className="fab fa-youtube"></i>
                   </Link>
                 </li>

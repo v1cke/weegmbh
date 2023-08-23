@@ -12,8 +12,8 @@ const index = () => {
     return (
         <>
             <Wrapper>
-                <SEO pageTitle={'Delport'} />
-                <HeaderOne headerClass={'header__two menu-sticky white-bg'} />
+                <SEO pageTitle={'Weser Ems Eisenbahn'} />
+                <HeaderOne headerClass={'header__two menu-sticky header__transparent'} />
                 <PortfolioDetailsArea item={item} />
                 <FooterFour />
             </Wrapper>
