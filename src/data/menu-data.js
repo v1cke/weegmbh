@@ -64,6 +64,7 @@ const menu_data = [
       { title: "FAQ", link: "/faq" },
       { title: "Standorte", link: "/location" },
       { title: "Partner", link: "/partner" },
+      { title: "Kontakt", link: "/contact" },
       // { title: "Team",
       //   link: "/team",
       //   // submenus: [
@@ -73,7 +74,6 @@ const menu_data = [
       //   },
         // { title: "Awards", link: "/awards" },
       // { title: "Karriere", link: "/career" },
-      // { title: "Kontakt", link: "/contact" },
       // { title: "Quote", link: "/quote" },
       // { title: "Pricing", link: "/pricing" },
       // { title: "Login", link: "/login" },

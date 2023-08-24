@@ -1,5 +1,7 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+// import emailjs from '@emailjs/browser';
 import { useFormik } from "formik";
 // internal
 import { contact_schema } from "@utils/validation-schema";
@@ -7,51 +9,69 @@ import ErrorMsg from "./error-msg";
 import NiceSelect from "@ui/niceSelect";
 
 const ContactForm = () => {
-  const form =useRef();
-  const sendEmail = (e) =>{
-    e.preventDefault();
-    emailjs.sendForm('service_09qnshq', 'template_irfvadi', form.current, 'rRQgLnmvk_K0SZSsf')
-      .then((result) => {
-          console.log(result.text);
-          console.log("message sent");
-          // resetForm();
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
+  // const form =useRef();
+  // const sendEmail = (e) =>{
+  //   e.preventDefault();
+  //   emailjs.sendForm('service_09qnshq', 'template_irfvadi', form.current, 'rRQgLnmvk_K0SZSsf')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         console.log("message sent");
+  //         // resetForm();
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // }
 
-  const selectHandler = (value) => {};
+  const selectHandler = (e) => {
+    const resolveAfter3Sec = new Promise((resolve) =>
+    setTimeout(resolve, 1000)
+    );
+    toast.promise(resolveAfter3Sec, {
+      duration: 3000,
+      pending: "Nachricht wird verschickt",
+      success: "Ihre Nachricht wurde verschickt!",
+      error: "Nachricht konnte nicht verschickt werden 🤯",
+    });
+    e.preventDefault();
+  };
+
   const handleSelectChange = (value) => {
     if (value === "Select Subject") {
-      setFieldValue('selectedValue', '');
+      setFieldValue("selectedValue", "");
     } else {
-      setFieldValue('selectedValue', value);
+      setFieldValue("selectedValue", value);
       selectHandler(value);
     }
   };
-  // use formik
-  const { handleChange, handleSubmit, handleBlur, errors, values, touched, setFieldValue } =
-    useFormik({
-      initialValues: {
-        name: "",
-        email: "",
-        phone: "",
-        msg: "",
-        selectedValue: ""
-      },
 
-      validationSchema: contact_schema,
-      
-      onSubmit: (values, { resetForm }) => {
-        console.log(values);
-        resetForm();
-      },
-    });
-    console.log('Form values:', values);
+  // use formik
+  const {
+    handleChange,
+    handleSubmit,
+    handleBlur,
+    errors,
+    values,
+    touched,
+    setFieldValue,
+  } = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      phone: "",
+      msg: "",
+      selectedValue: "",
+    },
+    validationSchema: contact_schema,
+
+    onSubmit: (values, actions) => {
+      console.log(values);
+      actions.resetForm();
+    },
+  });
 
   // const selectHandler = e => { }
   return (
-    <form ref={form} id="contact-form" onSubmit={sendEmail}>
+    <form id="contact-form" onSubmit={selectHandler}>
       <div className="row">
         <div className="col-xxl-6 col-xl-6 col-lg-6">
           <div className="single-input-field">
@@ -134,7 +154,9 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="col-xxl-12 col-xl-12">
-          <button type="submit" className="fill-btn clip-btn">Nachricht senden</button>
+          <button type="submit" className="fill-btn clip-btn">
+            Nachricht senden
+          </button>
         </div>
       </div>
     </form>

@@ -51,11 +51,11 @@ const FooterFour = () => {
                                     <h4>Leistungen</h4>
                                 </div>
                                 <ul className="footer-widget-link-2">
-                                    <li><i className="fas fa-truck"></i><Link href="/services">EVU Dienstleistungen</Link></li>
-                                    <li><i className="fas fa-cogs"></i><Link href="/services">Ausbildung</Link></li>
-                                    <li><i className="fas fa-box"></i><Link href="/services">Arbeitnehmerüberlassung</Link></li>
-                                    <li><i className="fas fa-plane"></i><Link href="/services">Zugverkehr</Link></li>
-                                    <li><i className="fas fa-ship"></i><Link href="/services">Fahrzeugvermietung</Link></li>
+                                    <li><i className="fas fa-truck"></i><Link href="/services-details/1">EVU Dienstleistungen</Link></li>
+                                    <li><i className="fas fa-cogs"></i><Link href="/services-details/2">Ausbildung</Link></li>
+                                    <li><i className="fas fa-box"></i><Link href="/services-details/3">Arbeitnehmerüberlassung</Link></li>
+                                    <li><i className="fas fa-plane"></i><Link href="/services-details/4">Zugverkehr</Link></li>
+                                    <li><i className="fas fa-ship"></i><Link href="/services-details/5">Fahrzeugvermietung</Link></li>
                                 </ul>
                             </div>
                         </div>

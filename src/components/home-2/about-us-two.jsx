@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const AboutUsTwo = () => {
   return (
-    <section className="about__3 about__gray-bg p-relative pt-120 pb-60">
+    <section className="about__3 about__gray-bg p-relative pt-60 pb-60">
       <div className="container">
         <div
           className="row align-items-center wow fadeInU"
