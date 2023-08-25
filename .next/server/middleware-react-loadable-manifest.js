@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"../components/home/funfact-area.jsx -> ../common/counter/CountUpContent":{"id":"../components/home/funfact-area.jsx -> ../common/counter/CountUpContent","files":["static/chunks/src_components_common_counter_CountUpContent_jsx.js"]}}

@@ -9,32 +9,31 @@ import ErrorMsg from "./error-msg";
 import NiceSelect from "@ui/niceSelect";
 
 const ContactForm = () => {
-  // const form =useRef();
-  // const sendEmail = (e) =>{
-  //   e.preventDefault();
-  //   emailjs.sendForm('service_09qnshq', 'template_irfvadi', form.current, 'rRQgLnmvk_K0SZSsf')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //         console.log("message sent");
-  //         // resetForm();
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // }
+  const form =useRef();
 
-  const selectHandler = (e) => {
+  const sendEmail = (e) =>{
+    console.log(values);
     const resolveAfter3Sec = new Promise((resolve) =>
-    setTimeout(resolve, 1000)
+    setTimeout(resolve, 2000)
     );
     toast.promise(resolveAfter3Sec, {
-      duration: 3000,
       pending: "Nachricht wird verschickt",
       success: "Ihre Nachricht wurde verschickt!",
       error: "Nachricht konnte nicht verschickt werden 🤯",
     });
     e.preventDefault();
-  };
 
+    // emailjs.sendForm('service_09qnshq', 'template_irfvadi', form.current, 'rRQgLnmvk_K0SZSsf')
+    //   .then((result) => {
+    //       console.log(result.text);
+    //       console.log("message sent");
+    //       // resetForm();
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
+  }
+
+  
   const handleSelectChange = (value) => {
     if (value === "Select Subject") {
       setFieldValue("selectedValue", "");
@@ -43,17 +42,11 @@ const ContactForm = () => {
       selectHandler(value);
     }
   };
-
+  
+  const selectHandler = (e) => {};
   // use formik
-  const {
-    handleChange,
-    handleSubmit,
-    handleBlur,
-    errors,
-    values,
-    touched,
-    setFieldValue,
-  } = useFormik({
+  const { handleChange, handleSubmit, handleBlur, setFieldValue, errors, values, touched } =
+    useFormik({
     initialValues: {
       name: "",
       email: "",
@@ -62,16 +55,16 @@ const ContactForm = () => {
       selectedValue: "",
     },
     validationSchema: contact_schema,
-
-    onSubmit: (values, actions) => {
-      console.log(values);
-      actions.resetForm();
-    },
-  });
+      // onSubmit: (values, { resetForm }) => {
+      //   console.log(values);
+      //   resetForm();
+      // },
+    });
+  
 
   // const selectHandler = e => { }
   return (
-    <form id="contact-form" onSubmit={selectHandler}>
+    <form form={form} id="contact-form" onSubmit={sendEmail}>
       <div className="row">
         <div className="col-xxl-6 col-xl-6 col-lg-6">
           <div className="single-input-field">

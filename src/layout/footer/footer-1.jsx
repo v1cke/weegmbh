@@ -55,7 +55,7 @@ const FooterOne = () => {
 
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget1 mb-50 pr-20">
                                 <div className="footer-widget-title">
                                     <h4>Über uns</h4>
@@ -71,7 +71,7 @@ const FooterOne = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget2 mb-50 pl-30">
                                 <div className="footer-widget-title">
                                     <h4>Unternehmen</h4>
@@ -93,7 +93,7 @@ const FooterOne = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget3 mb-50 pl-55">
                                 <div className="footer-widget-title">
                                     <h4>Leistungen</h4>
@@ -107,21 +107,20 @@ const FooterOne = () => {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget4 mb-50 pl-10 pr-40">
                                 <div className="footer-widget-title">
-                                    <h4>Subscribe us</h4>
+                                <h4>Rechtliches</h4>
                                 </div>
-                                <p className="mb-20">Subscribe us & receive our office & update in your inbox directly</p>
-                                <form onSubmit={handleSubmit} action="#" className="subscribe-form subscribe-form-footer1">
-                                    <div className="s-clip p-relative s-input mb-10">
-                                        <input type="text" placeholder="Enter your email" />
-                                        <i className="fas fa-envelope"></i>
-                                    </div>
-                                    <button type="submit">Subscribe Now</button>
-                                </form>
+                                <div className="footer-widget-link">
+                                    <ul>
+                                    <li><Link href="/contact">Kontakt</Link></li>
+                                        <li><Link href="/impressum">Impressum</Link></li>
+                                        <li><Link href="/datenschutz">Datenschutz</Link></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import AwardsSection from './awards-section';
 const index = () => {
     return (
         <main>
-            <Breadcrumb title='awards' subTitle="awards" />
+            <Breadcrumb title='Impressum' subTitle="Impressum" />
             <AwardsSection />
         </main>
     );

@@ -14,7 +14,7 @@ export const contact_schema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
   phone: Yup.string().required().min(11).label("Phone"),
-  company: Yup.string().required().label("Company"),
+  // company: Yup.string().required().label("Company"),
   msg: Yup.string().required().min(10).label("Message"),
 });
 // contact_schema
