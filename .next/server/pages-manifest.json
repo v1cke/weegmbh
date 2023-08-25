@@ -2,9 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/datenschutz": "pages/datenschutz.js",
-  "/": "pages/index.js",
-  "/services": "pages/services.js",
-  "/portfolio": "pages/portfolio.js",
-  "/career": "pages/career.js"
+  "/": "pages/index.js"
 }
