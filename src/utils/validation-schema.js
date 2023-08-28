@@ -13,7 +13,7 @@ export const law_schema = Yup.object().shape({
 export const contact_schema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
-  phone: Yup.string().required().min(11).label("Phone"),
+  phone: Yup.string().required().min(8).label("Phone"),
   // company: Yup.string().required().label("Company"),
   msg: Yup.string().required().min(10).label("Message"),
 });
