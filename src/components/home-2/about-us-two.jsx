@@ -33,6 +33,7 @@ const AboutUsTwo = () => {
                 <span>
                   <i className="far fa-trophy-alt"></i>
                 </span>
+                {/* TODO: anzahl der Jahre variabel machen */}
                 <h4 className="about__3-title">Über 10 Jahre Erfahrung</h4>
               </div>
             </div>
@@ -67,6 +68,7 @@ const AboutUsTwo = () => {
                     Arbeitnehmerüberlassung und EVU-Dienstleistungen, die den
                     reibungslosen Betrieb Ihrer Bahninfrastruktur sicherstellen.
                   </p>
+                  {/* TODO: muss dieser button sein? */}
                   <div className="about__3-content-btn mt-35">
                     <Link href="/services" className="skew-btn">
                       Mehr Info

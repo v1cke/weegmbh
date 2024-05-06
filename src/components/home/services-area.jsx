@@ -68,19 +68,19 @@ const ServicesArea = () => {
                                                 services_data.slice(0, 5).map((item) => (
                                                     <SwiperSlide key={item.id}>
                                                         <div className="swiper-slide">
-                                                            <div className="services__item text-center">
-                                                                <div className="services__item-icon mb-35">
-                                                                    <i className={item.icon}></i>
-                                                                </div>
-                                                                <div className="services__item-content">
-                                                                    <Link href={`/services-details/${item.id}`}>
+                                                            <Link href={`/services-details/${item.id}`}>
+                                                                <div className="services__item text-center">
+                                                                    <div className="services__item-icon mb-35">
+                                                                        <i className={item.icon}></i>
+                                                                    </div>
+                                                                    <div className="services__item-content">
                                                                         <h3>{item.title}</h3>
-                                                                    </Link>
-                                                                    <p>{item.description.slice(0, 63)}</p>
+                                                                        <p>{item.description.slice(0, 63)}</p>
+                                                                    </div>
+                                                                    <div className="services__item-shape">
+                                                                    </div>
                                                                 </div>
-                                                                <div className="services__item-shape">
-                                                                </div>
-                                                            </div>
+                                                            </Link>
                                                         </div>
                                                     </SwiperSlide>
                                                 ))

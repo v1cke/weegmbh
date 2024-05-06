@@ -81,7 +81,7 @@ const AboutUs = () => {
                       role="tabpanel"
                       aria-labelledby="approch-tab"
                     >
-                      <p>
+                      <p style={{ minHeight: '208px' }}>
                         Wir bieten wir Ihnen erstklassige Lösungen, die die
                         gesamte Bandbreite des Eisenbahnwesens abdecken. Von
                         Fahrzeugvermietung, Baulogistik, Güterverkehr,
@@ -89,11 +89,7 @@ const AboutUs = () => {
                         Zügen und Personal, setzen wir Ihr Vertrauen in
                         bewährter Expertise um.
                       </p>
-                      <div className="about__content-tab-btn mt-35">
-                        <Link className="fill-btn clip-md-btn" href="/about-us">
-                          mehr erfahren
-                        </Link>
-                      </div>
+
                     </div>
                     <div
                       className="tab-pane fade"
@@ -101,7 +97,7 @@ const AboutUs = () => {
                       role="tabpanel"
                       aria-labelledby="goal-tab"
                     >
-                      <p>
+                      <p style={{ minHeight: '208px' }}>
                         Die Weser Ems Eisenbahn umfasst ein breites Spektrum an
                         Angeboten rund um die Eisenbahn-Branche. Egal, ob Sie
                         Züge, Personal oder beides benötigen. Wir haben das
@@ -110,11 +106,7 @@ const AboutUs = () => {
                         Räumlichkeiten, das Schulungspersonal sowie
                         entsprechende Züge und einen Simulator.
                       </p>
-                      <div className="about__content-tab-btn mt-35">
-                        <Link className="fill-btn clip-md-btn" href="/about-us">
-                          mehr erfahren
-                        </Link>
-                      </div>
+
                     </div>
                     <div
                       className="tab-pane fade"
@@ -122,21 +114,25 @@ const AboutUs = () => {
                       role="tabpanel"
                       aria-labelledby="mision-tab"
                     >
-                      <p>
-                      Als Ausbildungs- und Prüfungslizenzinhaber für
-                    Lokomotivführer legen wir einen starken Fokus auf die
-                    Ausbildung und Weiterbildung von Fachkräften. Unsere
-                    umfassende Erfahrung erstreckt sich auch auf die
-                    Arbeitnehmerüberlassung und EVU-Dienstleistungen, die den
-                    reibungslosen Betrieb Ihrer Bahninfrastruktur sicherstellen.
+                      <p style={{ minHeight: '208px' }}>
+                        Als Ausbildungs- und Prüfungslizenzinhaber für
+                        Lokomotivführer legen wir einen starken Fokus auf die
+                        Ausbildung und Weiterbildung von Fachkräften. Unsere
+                        umfassende Erfahrung erstreckt sich auch auf die
+                        Arbeitnehmerüberlassung und EVU-Dienstleistungen, die den
+                        reibungslosen Betrieb Ihrer Bahninfrastruktur sicherstellen.
                       </p>
-                      <div className="about__content-tab-btn mt-35">
-                        <Link className="fill-btn clip-md-btn" href="/about-us">
-                          mehr erfahren
-                        </Link>
-                      </div>
+
                     </div>
                   </div>
+
+                  <div className="about__content-tab-btn mt-35">
+                    <Link className="fill-btn clip-md-btn" href="/about-us">
+                      mehr erfahren
+                    </Link>
+                  </div>
+
+
                 </div>
               </div>
             </div>

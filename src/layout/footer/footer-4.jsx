@@ -47,7 +47,7 @@ const FooterFour = () => {
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget footer2-widget footer2-widget4 mb-50 pl-10 pr-40">
-                            <div className="footer-widget-title">
+                                <div className="footer-widget-title">
                                     <h4>Rechtliches</h4>
                                 </div>
                                 <div className="footer-widget-link">
@@ -65,11 +65,11 @@ const FooterFour = () => {
                                     <h4>Leistungen</h4>
                                 </div>
                                 <ul className="footer-widget-link-2">
-                                    <li><i className="fas fa-truck"></i><Link href="/services-details/1">EVU Dienstleistungen</Link></li>
-                                    <li><i className="fas fa-cogs"></i><Link href="/services-details/2">Ausbildung</Link></li>
-                                    <li><i className="fas fa-box"></i><Link href="/services-details/3">Arbeitnehmerüberlassung</Link></li>
-                                    <li><i className="fas fa-plane"></i><Link href="/services-details/4">Zugverkehr</Link></li>
-                                    <li><i className="fas fa-ship"></i><Link href="/services-details/5">Fahrzeugvermietung</Link></li>
+                                    <li><i className="fas fa-star"></i><Link href="/services-details/1">EVU Dienstleistungen</Link></li>
+                                    <li><i className="fas fa-play"></i><Link href="/services-details/2">Ausbildung</Link></li>
+                                    <li><i className="fas fa-user"></i><Link href="/services-details/3">Arbeitnehmerüberlassung</Link></li>
+                                    <li><i className="fas fa-train"></i><Link href="/services-details/4">Zugverkehr</Link></li>
+                                    <li><i className="fas fa-train"></i><Link href="/services-details/5">Fahrzeugvermietung</Link></li>
                                 </ul>
                             </div>
                         </div>

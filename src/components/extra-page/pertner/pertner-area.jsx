@@ -84,15 +84,17 @@ const PertnerArea = () => {
                     {
                         pertnerData.map((item) => (
                             <div className="col-xl-4 col-md-6" key={item.id}>
-                                <div className="partner-item mb-30">
-                                    <div className="partner-thumb">
-                                        <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="certificate-image" />
+                                <Link href={item.link} target='blank' >
+                                    <div className="partner-item mb-30">
+                                        <div className="partner-thumb">
+                                            <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="certificate-image" />
+                                        </div>
+                                        <div className="partner-content">
+                                            <h3><Link href={item.link} target='blank'>{item.title}</Link></h3>
+                                            <p>{item.description}</p>
+                                        </div>
                                     </div>
-                                    <div className="partner-content">
-                                        <h3><Link href={item.link}>{item.title}</Link></h3>
-                                        <p>{item.description}</p>
-                                    </div>
-                                </div>
+                                </Link>
                             </div>
                         ))
                     }

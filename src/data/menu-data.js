@@ -42,9 +42,9 @@ const menu_data = [
     link: "/portfolio",
     pages: true,
     // submenus: [
-        //   { title: "Portfolio", link: "/portfolio" },
-        //   { title: "Portfolio Details", link: "/portfolio-details" },
-        // ],
+    //   { title: "Portfolio", link: "/portfolio" },
+    //   { title: "Portfolio Details", link: "/portfolio-details" },
+    // ],
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const menu_data = [
       //     //   { title: "team details", link: "/team-details" },
       //     // ],
       //   },
-        // { title: "Awards", link: "/awards" },
+      // { title: "Awards", link: "/awards" },
       // { title: "Karriere", link: "/career" },
       // { title: "Quote", link: "/quote" },
       // { title: "Pricing", link: "/pricing" },
@@ -80,8 +80,8 @@ const menu_data = [
       // { title: "Register", link: "/register" },
     ],
   },
-  
-  
+
+
 ];
 
 export default menu_data;

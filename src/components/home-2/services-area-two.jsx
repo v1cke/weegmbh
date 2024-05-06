@@ -18,18 +18,20 @@ const ServicesAreaTwo = () => {
                     {
                         servicesData.slice(6, 11).map((item) => (
                             <div className="col-xl-4 col-md-6" key={item.id}>
-                                <div className="services__3-item mb-30">
-                                    <div className="services__3-item-num">
-                                        <h3>{item.number}</h3>
+                                <Link href={`/services-details/${item.id - 6}`}>
+                                    <div className="services__3-item mb-30">
+                                        <div className="services__3-item-num">
+                                            <h3>{item.number}</h3>
+                                        </div>
+                                        <div className="services__3-item-icon">
+                                            <i className={item.icon}></i>
+                                        </div>
+                                        <h3 className="services__3-item-title"><Link href={`/services-details/${item.id - 6}`}> {item.title}</Link></h3>
+                                        <p className="services__3-item-text">
+                                            {item.description}
+                                        </p>
                                     </div>
-                                    <div className="services__3-item-icon">
-                                        <i className={item.icon}></i>
-                                    </div>
-                                    <h3 className="services__3-item-title"><Link href={`/services-details/${item.id - 6}`}> {item.title}</Link></h3>
-                                    <p className="services__3-item-text">
-                                        {item.description}
-                                    </p>
-                                </div>
+                                </Link>
                             </div>
                         ))
                     }

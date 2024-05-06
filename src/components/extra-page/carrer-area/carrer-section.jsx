@@ -62,7 +62,7 @@ const CarrerSection = () => {
                                             </div>
                                             <h3>{item.contact}</h3>
                                             <div className="job-meta mt-15">
-                                                <Link href={item.link}><span><i className={item.icon}></i> {item.address}</span></Link>
+                                                <Link href={item.link} target='blank'><span><i className={item.icon}></i> {item.address}</span></Link>
                                                 {/* <span><i className={item.iconTwo}></i>{item.doller}</span> */}
                                             </div>
                                             <div className="job-btn-inner mt-30">

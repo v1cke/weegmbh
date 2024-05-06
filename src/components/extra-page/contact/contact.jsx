@@ -36,11 +36,19 @@ const Contact = () => {
                     contactData.map((item) => (
                         <div className="single-contact-info d-flex align-items-center" key={item.id}>
                             <div className="contact-info-icon">
-                                <Link href="#"><i className={item.icon}></i></Link>
+                                {item.contact.startsWith('https') ? (
+                                    <Link href={item.contact} target="_blank"><i className={item.icon}></i></Link>
+                                ) : (
+                                    <Link href={item.contact}><i className={item.icon}></i></Link>
+                                )}
                             </div>
                             <div className="contact-info-text">
                                 <span>{item.infoText}</span>
-                                <h5><Link href={item.contact}>{item.other}</Link></h5>
+                                {item.contact.startsWith('https') ? (
+                                    <Link href={item.contact} target="_blank">{item.other}</Link>
+                                ) : (
+                                    <Link href={item.contact}>{item.other}</Link>
+                                )}
                             </div>
                         </div>
                     ))
