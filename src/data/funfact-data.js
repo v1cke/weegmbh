@@ -19,7 +19,7 @@ const funFactData = [
   },
   {
     id: 4,
-    icon: "fal fa-truck",
+    icon: "fal fa-train",
     number: "18907",
     info: "Successful Delivery",
   },

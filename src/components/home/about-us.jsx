@@ -3,8 +3,8 @@ import React from "react";
 import about_img from "@assets/img/about/ph.png";
 import Image from "next/image";
 import "react-modal-video/css/modal-video.min.css";
-import VideoModal from "@components/common/modals/modal-video";
 import useModal from "@hooks/use-modal";
+import ReactPlayer from "react-player";
 
 const AboutUs = () => {
   const { isVideoOpen, setIsVideoOpen } = useModal();
@@ -81,7 +81,7 @@ const AboutUs = () => {
                       role="tabpanel"
                       aria-labelledby="approch-tab"
                     >
-                      <p style={{ minHeight: '208px' }}>
+                      <p style={{ minHeight: "208px" }}>
                         Wir bieten wir Ihnen erstklassige Lösungen, die die
                         gesamte Bandbreite des Eisenbahnwesens abdecken. Von
                         Fahrzeugvermietung, Baulogistik, Güterverkehr,
@@ -89,7 +89,6 @@ const AboutUs = () => {
                         Zügen und Personal, setzen wir Ihr Vertrauen in
                         bewährter Expertise um.
                       </p>
-
                     </div>
                     <div
                       className="tab-pane fade"
@@ -97,7 +96,7 @@ const AboutUs = () => {
                       role="tabpanel"
                       aria-labelledby="goal-tab"
                     >
-                      <p style={{ minHeight: '208px' }}>
+                      <p style={{ minHeight: "208px" }}>
                         Die Weser Ems Eisenbahn umfasst ein breites Spektrum an
                         Angeboten rund um die Eisenbahn-Branche. Egal, ob Sie
                         Züge, Personal oder beides benötigen. Wir haben das
@@ -106,7 +105,6 @@ const AboutUs = () => {
                         Räumlichkeiten, das Schulungspersonal sowie
                         entsprechende Züge und einen Simulator.
                       </p>
-
                     </div>
                     <div
                       className="tab-pane fade"
@@ -114,15 +112,15 @@ const AboutUs = () => {
                       role="tabpanel"
                       aria-labelledby="mision-tab"
                     >
-                      <p style={{ minHeight: '208px' }}>
+                      <p style={{ minHeight: "208px" }}>
                         Als Ausbildungs- und Prüfungslizenzinhaber für
                         Lokomotivführer legen wir einen starken Fokus auf die
                         Ausbildung und Weiterbildung von Fachkräften. Unsere
                         umfassende Erfahrung erstreckt sich auch auf die
-                        Arbeitnehmerüberlassung und EVU-Dienstleistungen, die den
-                        reibungslosen Betrieb Ihrer Bahninfrastruktur sicherstellen.
+                        Arbeitnehmerüberlassung und EVU-Dienstleistungen, die
+                        den reibungslosen Betrieb Ihrer Bahninfrastruktur
+                        sicherstellen.
                       </p>
-
                     </div>
                   </div>
 
@@ -131,8 +129,6 @@ const AboutUs = () => {
                       mehr erfahren
                     </Link>
                   </div>
-
-
                 </div>
               </div>
             </div>
@@ -141,31 +137,40 @@ const AboutUs = () => {
                 className="about__img-2 mb-60 ml-60 w-img p-relative wow fadeInLeft"
                 data-wow-duration="1.5s"
                 data-wow-delay=".3s"
+                style={{ width: "100%", height: "400px" }}
               >
-                <Image
-                  src={about_img}
-                  style={{ width: "100%", height: "auto" }}
-                  alt="About"
-                />
-                <div className="about__btn-2">
-                  <button
-                    type="button"
-                    className="popup-video play-btn play-btn-white"
-                    onClick={() => setIsVideoOpen(true)}
-                  >
-                    <i className="fas fa-play"></i>
-                  </button>
-                </div>
+                {!isVideoOpen && (
+                  <>
+                    <Image
+                      src={about_img}
+                      style={{ width: "100%", height: "auto" }}
+                      alt="About"
+                    />
+                    <div className="about__btn-2">
+                      <button
+                        type="button"
+                        className="popup-video play-btn play-btn-white"
+                        onClick={() => setIsVideoOpen(true)}
+                      >
+                        <i className="fas fa-play"></i>
+                      </button>
+                    </div>
+                  </>
+                )}
+                {isVideoOpen && (
+                  <ReactPlayer
+                    url="https://www.youtube.com/watch?v=WKf3OEORLSM"
+                    className="react-player"
+                    playing
+                    width="100%"
+                    height="100%"
+                  />
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
-      <VideoModal
-        isVideoOpen={isVideoOpen}
-        setIsVideoOpen={setIsVideoOpen}
-        videoId="WKf3OEORLSM"
-      />
     </>
   );
 };

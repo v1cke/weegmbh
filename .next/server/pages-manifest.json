@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/career": "pages/career.js",
-  "/": "pages/index.js"
+  "/team-details/[id]": "pages/team-details/[id].js",
+  "/about-us": "pages/about-us.js",
+  "/": "pages/index.js",
+  "/partner": "pages/partner.js"
 }

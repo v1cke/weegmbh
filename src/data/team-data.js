@@ -1,48 +1,53 @@
-import img_1 from "@assets/img/team/t-8.png";
+import img_1 from "@assets/img/team/markusPusch1.jpg";
 import img_2 from "@assets/img/team/t-9.png";
 import img_3 from "@assets/img/team/t-6.png";
-import img_4 from "@assets/img/team/t-2.png";
-import img_5 from "@assets/img/team/t-1.png";
-import img_6 from "@assets/img/team/t-3.png";
-
 const team_data = [
-  // home
   {
     id: 1,
-    desination: "founder",
-    name: "alonso d. dowson",
+    desination: "Örtlicher Betriebsleiter",
+    name: "Markus Pusch",
     image: img_1,
+    phone: "tel:+49 541 44440418",
+    phonetext: " +49 541 44440418",
+    mail: "mailto:markus.pusch@wee.gmbh",
+    mailtext: " markus.pusch@wee.gmbh",
+    hrefAdress:
+      "https://www.google.com/maps/place/Franz-Lenz-Stra%C3%9Fe+1,+49084+Osnabr%C3%BCck/@52.2729587,8.0625574,17z/data=!3m1!4b1!4m6!3m5!1s0x47b9e59e067d15f7:0x3365287d34a6b349!8m2!3d52.2729587!4d8.0651323!16s%2Fg%2F11c1zssr4h?entry=ttu",
+
+    adress: "Franz-Lenz-Str. 1, 49084 Osnabrück",
+    shortdesc: "Cooler Typ",
+    experience: "der hat echt was drauf und so...",
   },
   {
     id: 2,
-    desination: "CEO & Founder",
-    name: "Blaine H. Vallejo",
+    desination: "Aus-/Fortbildung",
+    name: "Cihad Kayman",
     image: img_2,
+    phone: "tel:+49 162-3459287",
+    phonetext: "+49 162-3459287",
+    mail: "mailto:cihad.kayman@wee.gmbh",
+    mailtext: " cihad.kayman@wee.gmbh",
+    hrefAdress:
+      "https://www.google.com/maps/place/Franz-Lenz-Stra%C3%9Fe+1,+49084+Osnabr%C3%BCck/@52.2729587,8.0625574,17z/data=!3m1!4b1!4m6!3m5!1s0x47b9e59e067d15f7:0x3365287d34a6b349!8m2!3d52.2729587!4d8.0651323!16s%2Fg%2F11c1zssr4h?entry=ttu",
+
+    adress: "Franz-Lenz-Str. 1, 49084 Osnabrück",
+    shortdesc: "Cooler Typ",
+    experience: "der hat echt was drauf und so...",
   },
   {
     id: 3,
-    desination: "Web Designer",
-    name: "Marcos A. Maurer",
+    desination: "ECM",
+    name: "Marc Holtmann",
     image: img_3,
-  },
-  // home-2 data
-  {
-    id: 4,
-    desination: "founder",
-    name: "alonso d. dowson",
-    image: img_4,
-  },
-  {
-    id: 5,
-    desination: "ceo",
-    name: "rosalina d. williamson",
-    image: img_5,
-  },
-  {
-    id: 6,
-    desination: "designer",
-    name: "hilixer h. humble",
-    image: img_6,
+    phone: "tel:+49 541 44440420",
+    phonetext: "+49 541 44440420",
+    mail: "mailto:marc.holtmann@wee.gmbh",
+    mailtext: " marc.holtmann@wee.gmbh",
+    hrefAdress:
+      "https://www.google.com/maps/place/Franz-Lenz-Stra%C3%9Fe+1,+49084+Osnabr%C3%BCck/@52.2729587,8.0625574,17z/data=!3m1!4b1!4m6!3m5!1s0x47b9e59e067d15f7:0x3365287d34a6b349!8m2!3d52.2729587!4d8.0651323!16s%2Fg%2F11c1zssr4h?entry=ttu",
+    adress: "Franz-Lenz-Str. 1, 49084 Osnabrück",
+    shortdesc: "Cooler Typ",
+    experience: "der hat echt was drauf und so...",
   },
 ];
 export default team_data;
