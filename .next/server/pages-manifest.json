@@ -3,8 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/portfolio": "pages/portfolio.js",
-  "/career": "pages/career.js",
-  "/about-us": "pages/about-us.js",
-  "/services": "pages/services.js"
+  "/location": "pages/location.js",
+  "/faq": "pages/faq.js"
 }

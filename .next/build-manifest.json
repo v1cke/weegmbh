@@ -30,25 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/about-us": [
+    "/faq": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/about-us.js"
+      "static/chunks/pages/faq.js"
     ],
-    "/career": [
+    "/location": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/career.js"
-    ],
-    "/portfolio": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/portfolio.js"
-    ],
-    "/services": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/services.js"
+      "static/chunks/pages/location.js"
     ]
   },
   "ampFirstPages": []
