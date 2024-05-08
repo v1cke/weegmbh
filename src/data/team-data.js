@@ -47,7 +47,8 @@ const team_data = [
     hrefAdress:
       "https://www.google.com/maps/place/Franz-Lenz-Stra%C3%9Fe+1,+49084+Osnabr%C3%BCck/@52.2729587,8.0625574,17z/data=!3m1!4b1!4m6!3m5!1s0x47b9e59e067d15f7:0x3365287d34a6b349!8m2!3d52.2729587!4d8.0651323!16s%2Fg%2F11c1zssr4h?entry=ttu",
     adress: "Franz-Lenz-Str. 1, 49084 Osnabrück",
-    shortdesc: "Cooler Typ",
+    shortdesc:
+      "Als ECM verantwortet Marc die Einhaltung der neuen gesetzlichen ECM-Zertifizierungspflicht für alle unsere Schienenfahrzeuge. Als „Entity in Charge of Maintenance“ (ECM) stellt er sicher, dass das Instandhaltungsmanagement der Schienenfahrzeuge den strengen, europaweit einheitlichen Anforderungen entspricht. Dies umfasst die eindeutige Festlegung der Instandhaltungsverantwortung, die Beherrschung aller relevanten Instandhaltungsprozesse sowie den Nachweis der Eignung durch Zertifizierung. Er gewährleistet damit höchste Sicherheits- und Qualitätsstandards im Eisenbahnverkehr.",
     experience: "der hat echt was drauf und so...",
   },
 ];

@@ -1,10 +1,6 @@
 import React from "react";
 import Breadcrumb from "@components/common/breadcrumb/breadcrumb";
 import ExperienceArea from "./experience-area";
-import Skills from "./Skills";
-import Education from "./education";
-import CarrerInfo from "./carrer-info";
-import TmdForm from "@components/forms/tmd-form";
 
 const index = ({ item }) => {
   return (

@@ -7,7 +7,7 @@ import brandData from "@data/brand-data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css/bundle";
-import { pertnerData } from "@components/extra-page/pertner/pertner-area";
+import { partnerData } from "@components/extra-page/partner/partner-area";
 
 const BrandAreaSection = () => {
   return (
@@ -84,7 +84,7 @@ const BrandAreaSection = () => {
                   </div>
                 </SwiperSlide>
               ))} */}
-              {pertnerData.map((item) => (
+              {partnerData.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="brand-items-2">

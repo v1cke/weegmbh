@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesAreaTwo from "@components/home-2/services-area-two";
+import Leistungen from "@components/leistungen/leistungen";
 import MissionSection from "./mission-section";
 import ApproachArea from "./approach-area";
 import Breadcrumb from "@components/common/breadcrumb/breadcrumb";
@@ -9,7 +9,7 @@ const index = () => {
     <main>
       <Breadcrumb title={"Über uns"} subTitle={"Über uns"} />
 
-      <ServicesAreaTwo />
+      <Leistungen />
       <ApproachArea />
       <MissionSection />
     </main>
