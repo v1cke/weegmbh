@@ -2,26 +2,26 @@ const funFactData = [
   {
     id: 1,
     icon: "fal fa-globe",
-    number: "19300",
-    info: "Worldwide Clients",
+    number: "759385",
+    info: "Streckenkilometer",
   },
   {
     id: 2,
     icon: "fal fa-users",
-    number: "17083",
-    info: "Company Staffs",
+    number: "38",
+    info: "Angestellte",
   },
   {
     id: 3,
     icon: "fal fa-smile",
-    number: "17227",
-    info: "Satisfied Clients",
+    number: "36",
+    info: "TF-Kunden",
   },
   {
     id: 4,
     icon: "fal fa-train",
-    number: "18907",
-    info: "Successful Delivery",
+    number: "167",
+    info: "geprüfte TF",
   },
 ];
 export default funFactData;
