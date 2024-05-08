@@ -2,5 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/team-details/[id]": "pages/team-details/[id].js"
+  "/": "pages/index.js",
+  "/portfolio": "pages/portfolio.js",
+  "/career": "pages/career.js",
+  "/about-us": "pages/about-us.js",
+  "/services": "pages/services.js"
 }

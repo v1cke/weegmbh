@@ -1,6 +1,6 @@
 import img_1 from "@assets/img/team/markusPusch1.jpg";
-import img_2 from "@assets/img/team/t-9.png";
-import img_3 from "@assets/img/team/t-6.png";
+import img_2 from "@assets/img/team/cihadKayman1.png";
+import img_3 from "@assets/img/team/marcHoltmann1.jpeg";
 const team_data = [
   {
     id: 1,
@@ -32,7 +32,8 @@ const team_data = [
       "https://www.google.com/maps/place/Franz-Lenz-Stra%C3%9Fe+1,+49084+Osnabr%C3%BCck/@52.2729587,8.0625574,17z/data=!3m1!4b1!4m6!3m5!1s0x47b9e59e067d15f7:0x3365287d34a6b349!8m2!3d52.2729587!4d8.0651323!16s%2Fg%2F11c1zssr4h?entry=ttu",
 
     adress: "Franz-Lenz-Str. 1, 49084 Osnabrück",
-    shortdesc: "Cooler Typ",
+    shortdesc:
+      "Cihad ist verantwortlich für den Bereich Ausbildung / Fortbildung von Lokführern und Triebfahrzeugführern. Er entwickelt und implementiert Lehrpläne, die auf neuesten sicherheitstechnischen Standards und betrieblichen Anforderungen basieren, um sicherzustellen, dass alle Triebfahrzeugführer kompetent und gemäß den gesetzlichen Richtlinien geschult werden. Zusätzlich führt er regelmäßige Leistungsüberprüfungen durch und passt Trainingsinhalte an, um den sich ständig verändernden Anforderungen des Eisenbahnverkehrs gerecht zu werden. Er gewährleistet, dass unser und Ihr Fahrpersonal optimal vorbereitet und qualifiziert ist, um die Sicherheit und Effizienz im Eisenbahnbetrieb zu maximieren.",
     experience: "der hat echt was drauf und so...",
   },
   {
