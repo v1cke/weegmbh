@@ -99,7 +99,7 @@ const ExperienceArea = ({ item }) => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="col-lg-12 wow fadeInUp"
         data-wow-duration="1.5s"
         data-wow-delay=".3s"
@@ -110,7 +110,7 @@ const ExperienceArea = ({ item }) => {
           </div>
           <p>{item?.experience}</p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

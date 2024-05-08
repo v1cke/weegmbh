@@ -7,7 +7,6 @@ import CarrerInfo from "./carrer-info";
 import TmdForm from "@components/forms/tmd-form";
 
 const index = ({ item }) => {
-  console.log("index  item", item);
   return (
     <main>
       <Breadcrumb title="Team Details" subTitle="Team Details" />
